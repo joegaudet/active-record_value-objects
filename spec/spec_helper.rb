@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "active_record_value_objects"
+require "faker"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
