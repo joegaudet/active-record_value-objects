@@ -11,10 +11,10 @@ This lets you store objects without needing to do complex joins or create additi
 
 ```ruby
 class Address < ActiveRecordValueObjects::ValueObject
-  attribute :street, Types:String
-  attribute :city, Types:String
-  attribute :state, Types:String
-  attribute :zip, Types:String
+  attribute :street, Types::String
+  attribute :city, Types::String
+  attribute :state, Types::String
+  attribute :zip, Types::String
 end
 
 class User < ApplicationRecord
