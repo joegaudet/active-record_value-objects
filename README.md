@@ -18,7 +18,7 @@ class Address < ActiveRecordValueObjects::ValueObject
 end
 
 class User < ApplicationRecord
-  value_attribute :address, Addrinfo
+  value_attribute :address, Address 
 end
 ```
 ## Installation
