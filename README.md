@@ -21,6 +21,13 @@ class User < ApplicationRecord
   value_attribute :address, Address 
 end
 ```
+
+Values are immutable by default, but you can easily make copies of them with changes:
+
+```ruby
+new_address = Address.new(street: '123 Main St', city: 'Springfield', state: 'IL', zip: '62701')
+  .copy_with(city: 'Chicago')
+```
 ## Installation
 
 Add this line to your application's Gemfile:
